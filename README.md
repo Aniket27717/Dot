@@ -1,8 +1,8 @@
 <!doctype html>
 <html> 
  <head> 
- <link rel="stylesheet" href="style.css">
- </head>
+  <link rel="stylesheet" href="style.css"> 
+ </head> 
  <body> 
   <header> 
    <nav> 
@@ -20,26 +20,23 @@
   <script>
       function playAudio() {
         var audio = document.getElementById('audio-1');
-        audio.play();  // Starts the audio
+        audio.play();  
+
+        // When audio ends, perform an action (e.g., open a file or URL)
+        audio.onended = function() {
+            window.location.href = "https://aniket27717.github.io/dott/"; // Replace with your desired action
+        };
       }
-      
-    </script> 
+  </script> 
   <div class="circle"> 
-   <div class="circle-1"> 
-   </div> 
-   <div class="circle-2"> 
-   </div> 
-   <div class="circle-3"> 
-   </div> 
-   <div class="circle-4"> 
-   </div> 
-   <div class="circle-5"> 
-   </div> 
-   <div class="circle-6"> 
-   </div> 
-   <div class="circle-7"> 
-   </div> 
-   <div class="circle-8"> <button class="btn-1" onclick="playAudio()"> <!--<div class="done"></div>-->Click</button> 
+   <div class="circle-1"></div> 
+   <div class="circle-2"></div> 
+   <div class="circle-3"></div> 
+   <div class="circle-4"></div> 
+   <div class="circle-5"></div> 
+   <div class="circle-6"></div> 
+   <div class="circle-7"></div> 
+   <div class="circle-8"> <button class="btn-1" onclick="playAudio()">Click</button> 
    </div> 
   </div> 
  </body>
